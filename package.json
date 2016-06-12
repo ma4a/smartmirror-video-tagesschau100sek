@@ -1,0 +1,23 @@
+{
+  "name": "smartmirror-video-tagesschau100sek",
+  "version": "1.0.0",
+  "description": "SmartMirror Video 'Tagesschau in 100 Sekunden'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "smartmirror",
+    "video",
+    "tagesschau"
+  ],
+  "author": "Matthias Schmidt",
+  "license": "",
+  "dependencies": {
+    "express": "^4.13.4",
+    "jade": "^1.11.0"
+  },
+  "smartmirror": {
+
+  }
+}

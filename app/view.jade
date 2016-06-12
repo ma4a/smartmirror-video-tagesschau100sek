@@ -1,0 +1,13 @@
+video#player(width='480', source='', src='http://download.media.tagesschau.de/video/2016/0612/TV-20160612-2108-2301.websm.h264.mp4', type='video/mp4')
+  |   Your browser does not support HTML5 video.
+br
+button(onclick='playPause()') Play/Pause
+
+script.
+  var player = document.getElementById("player");
+  function playPause() {
+    if (player.paused)
+      player.play();
+    else
+      player.pause();
+  }
