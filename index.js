@@ -12,6 +12,10 @@ app.get('/', function (req, res) {
     res.render('app/view.jade', {});
 });
 
+app.get('/tagesschau.mp4', function(req, res) {
+    res.sendfile('./tagesschau.mp4');
+});
+
 app.listen(8080, function () {
     console.log('Module is listening on port 8080!');
 });
