@@ -9,13 +9,12 @@ app.set('views', __dirname);
 app.set('view engine', 'jade');
 
 app.get('/', function (req, res) {
-    res.render('app/view.jade', {});
-});
-
-app.get('/tagesschau.mp4', function(req, res) {
-    res.sendfile('./tagesschau.mp4');
+  controller.get()
+    .then((videoURL) => {
+      res.render('app/view.jade', {videoURL: videoURL});
+    });
 });
 
 app.listen(8080, function () {
-    console.log('Module is listening on port 8080!');
+  console.log('Module is listening on port 8080!');
 });
