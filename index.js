@@ -29,8 +29,8 @@ app.get('/', function (req, res) {
     })
     .catch((err) => {
       console.dir(err);
-    res.status(500).send(err);
-  });
+      res.status(500).send(err);
+    });
 });
 
 app.listen(8080, function () {
