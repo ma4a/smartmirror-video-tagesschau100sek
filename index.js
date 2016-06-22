@@ -21,9 +21,9 @@ app.get('/', function (req, res) {
   widget.size = pckg.smartmirror.size[0];
 
   controller.get(params)
-    .then((videoURL) => {
+    .then((data) => {
       res.render('./index.jade', {
-        videoURL: videoURL,
+        data: data,
         widget: widget,
       });
     })
