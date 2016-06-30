@@ -1,10 +1,14 @@
-center 
-  video#player(height='215', source='', src=data, type='video/mp4', margin='0 auto')
-    |   Your browser does not support HTML5 video.
-  br
+style(type='text/css').
+  #widget-#{widget._id} video {
+    margin: 0 auto;
+    display: block;
+  }
+
+video(height='220', source='', src=data, type='video/mp4')
+  | Your browser does not support HTML5 video.
 
 script.
-  var player = document.getElementById("player");
+  var player = document.querySelector('#widget-#{widget._id} video');
 
   function playPause() {
     if (player.paused)
