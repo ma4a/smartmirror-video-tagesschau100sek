@@ -16,3 +16,7 @@ script.
     else
       player.pause();
   }
+
+  socket.on('tagesschau', function (data) {
+    playPause();
+  });
