@@ -20,6 +20,7 @@
   "smartmirror": {
     "size": [
       "4x2"
-    ]
+    ],
+    "gestureSupport": true
   }
 }
